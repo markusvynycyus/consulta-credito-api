@@ -1,7 +1,6 @@
 # API de Consulta de Créditos NFSe
 
-![Logo](url_da_imagem) <!-- Insira aqui o URL da imagem do logo do projeto -->
-
+![Java Badge](https://camo.githubusercontent.com/bea90da226e09b503e6c8fde824f4816b98dcf30cd31e803006bf6335af06890/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f6a6176612d2532334544384230302e7376673f7374796c653d666f722d7468652d6261646765266c6f676f3d6f70656e6a646b266c6f676f436f6c6f723d7768697465) <!-- Badge do Java -->
 ## Visão Geral
 
 A API de Consulta de Créditos NFSe é uma solução robusta desenvolvida em Spring Boot para gerenciamento e consulta de créditos fiscais. O sistema oferece endpoints RESTful para acesso seguro e eficiente aos dados de créditos NFSe, com foco em performance e facilidade de integração.
@@ -31,8 +30,8 @@ A API de Consulta de Créditos NFSe é uma solução robusta desenvolvida em Spr
 ## 🚀 Como Utilizar
 
 ### Pré-requisitos
-- Java 11+
-- PostgreSQL 12+
+- Java 17+
+- PostgreSQL 14+
 - Maven 3.6+
 
 ### Instalação
@@ -101,6 +100,6 @@ Este projeto está licenciado sob a licença MIT - veja o arquivo [LICENSE](LICE
 
 ---
 
-**Desenvolvido por** [Seu Nome]  
-**Contato**: seu.email@example.com  
+**Desenvolvido por** [Marcos Venicios Evangelista Chaves  
+**Contato**: markusvynycyus@hotmail.com  
 **Versão**: 1.0.0
