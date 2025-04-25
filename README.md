@@ -1,44 +1,106 @@
 # API de Consulta de Créditos NFSe
 
-![Logo](url_da_imagem) <!-- Aqui você pode adicionar um logo ou imagem do projeto, se desejar -->
+![Logo](url_da_imagem) <!-- Insira aqui o URL da imagem do logo do projeto -->
 
-## Descrição
+## Visão Geral
 
-Este projeto implementa uma API RESTful para a consulta e gestão de créditos NFSe, utilizando o Spring Boot. O sistema permite a busca de créditos por número de NFSe e número de crédito, convertendo os dados para `DTOs` e utilizando o ModelMapper para facilitar o mapeamento entre as entidades e seus representações.
+A API de Consulta de Créditos NFSe é uma solução robusta desenvolvida em Spring Boot para gerenciamento e consulta de créditos fiscais. O sistema oferece endpoints RESTful para acesso seguro e eficiente aos dados de créditos NFSe, com foco em performance e facilidade de integração.
 
-### Funcionalidades
+## ✨ Principais Funcionalidades
 
-- **Busca de Créditos**:
-  - Por número da NFSe.
-  - Por número do crédito.
-  
-- **DTOs**:
-  - Conversão dos dados para objetos mais leves para retorno ao cliente.
-  
-- **Spring Data JPA**:
-  - Integração com PostgreSQL para persistência de dados.
+- **Consultas Avançadas**
+  - Busca de créditos por número da NFSe
+  - Pesquisa por número do crédito
+  - Filtros combinados para consultas complexas
 
-- **ModelMapper**:
-  - Utilizado para mapear as entidades para DTOs de forma simples e eficiente.
+- **Arquitetura Moderna**
+  - Padrão DTO para transferência otimizada de dados
+  - Mapeamento inteligente com ModelMapper
+  - Separação clara de responsabilidades (Controller-Service-Repository)
 
----
+- **Persistência de Dados**
+  - Integração com PostgreSQL
+  - Utilização do Spring Data JPA
+  - Consultas otimizadas com JPA Query Methods
 
-## Estrutura do Projeto
+- **Pronto para Produção**
+  - Documentação Swagger/OpenAPI integrada
+  - Tratamento de erros personalizado
+  - Configurações de segurança básica
 
-O projeto é estruturado da seguinte maneira:
+## 🚀 Como Utilizar
+
+### Pré-requisitos
+- Java 11+
+- PostgreSQL 12+
+- Maven 3.6+
+
+### Instalação
+```bash
+git clone https://github.com/seu-usuario/api-credito-nfse.git
+cd api-credito-nfse
+mvn install
+```
+
+### Configuração
+Edite o arquivo `application.properties` com suas credenciais:
+```properties
+spring.datasource.url=jdbc:postgresql://localhost:5432/nfse_db
+spring.datasource.username=seu_usuario
+spring.datasource.password=sua_senha
+```
+
+### Execução
+```bash
+mvn spring-boot:run
+```
+
+## 📚 Documentação da API
+
+A API está documentada com Swagger e pode ser acessada em:
+```
+http://localhost:8080/swagger-ui.html
+```
+
+## 🏗️ Estrutura do Projeto
 
 ```plaintext
 src/
- ├── main/
- │    ├── java/
- │    │    ├── com/
- │    │    │    ├── venicios/
- │    │    │    │    ├── api_credito_nfse/
- │    │    │    │    │    ├── controller/      # Controladores da API
- │    │    │    │    │    ├── dto/             # Objetos de Transferência de Dados (DTO)
- │    │    │    │    │    ├── model/           # Modelos de entidades
- │    │    │    │    │    ├── repository/      # Repositórios para acesso ao banco de dados
- │    │    │    │    │    ├── service/         # Lógica de negócios
- │    │    │    │    │    └── assembler/       # Classes para conversão de dados (ModelMapper)
- └── resources/
-      ├── application.properties  # Configurações do banco de dados e JPA
+├── main/
+│   ├── java/
+│   │   └── com/
+│   │       └── venicios/
+│   │           └── api_credito_nfse/
+│   │               ├── config/            # Configurações do sistema
+│   │               ├── controller/        # Endpoints da API
+│   │               ├── dto/               # Data Transfer Objects
+│   │               ├── exception/         # Tratamento de erros
+│   │               ├── model/             # Entidades JPA
+│   │               ├── repository/        # Camada de persistência
+│   │               ├── service/           # Lógica de negócios
+│   │               └── util/              # Utilitários e helpers
+│   └── resources/
+│       ├── application.properties         # Configurações
+│       └── messages/                      # Mensagens internacionalizadas
+└── test/                                  # Testes unitários e integração
+```
+
+## 🤝 Contribuição
+
+Contribuições são bem-vindas! Siga estes passos:
+
+1. Faça um fork do projeto
+2. Crie uma branch (`git checkout -b feature/nova-funcionalidade`)
+3. Commit suas mudanças (`git commit -m 'Adiciona nova funcionalidade'`)
+4. Push para a branch (`git push origin feature/nova-funcionalidade`)
+5. Abra um Pull Request
+
+## 📄 Licença
+
+Este projeto está licenciado sob a licença MIT - veja o arquivo [LICENSE](LICENSE) para detalhes.
+
+---
+
+**Desenvolvido por** [Seu Nome]  
+**Contato**: seu.email@example.com  
+**Versão**: 1.0.0
