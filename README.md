@@ -128,9 +128,6 @@ Resposta esperada:
   "baseCalculo": 25000.00
 }
 
-
-´´´
-
 ```
 ## 📚 Documentação da API
 
