@@ -89,8 +89,8 @@ VALUES
 ## Criação e População da Tabela `credito`
 
 ### ESTRUTURA DA API
- 
-# GET /api/creditos/{numeroNfse}
+``` 
+#### GET /api/creditos/{numeroNfse}
 Descrição: Retorna uma lista de créditos constituídos com base no número da NFS-e.
 Parâmetro:
 ·   	numeroNfse (String) - Número identificador da NFS-e
@@ -109,6 +109,8 @@ Resposta esperada:
 	"baseCalculo": 25000.00
   }
 ]
+´´´
+
 ```
 ## 📚 Documentação da API
 
