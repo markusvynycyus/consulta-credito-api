@@ -85,6 +85,31 @@ VALUES
 ('789012', '7891011', '2024-02-26', 1200.50, 'ISSQN', false, 4.5, 25000.00, 4000.00, 21000.00),
 ('654321', '1122334', '2024-01-15', 800.50, 'Outros', true, 3.5, 20000.00, 3000.00, 17000.00);
 ```
+
+## Criação e População da Tabela `credito`
+
+### ESTRUTURA DA API
+ 
+# GET /api/creditos/{numeroNfse}
+Descrição: Retorna uma lista de créditos constituídos com base no número da NFS-e.
+Parâmetro:
+·   	numeroNfse (String) - Número identificador da NFS-e
+Resposta esperada:
+[
+  {
+	"numeroCredito": "123456",
+	"numeroNfse": "7891011",
+	"dataConstituicao": "2024-02-25",
+	"valorIssqn": 1500.75,
+	"tipoCredito": "ISSQN",
+	"simplesNacional": "Sim",
+	"aliquota": 5.0,
+	"valorFaturado": 30000.00,
+	"valorDeducao": 5000.00,
+	"baseCalculo": 25000.00
+  }
+]
+```
 ## 📚 Documentação da API
 
 A API está documentada com Swagger e pode ser acessada em:
