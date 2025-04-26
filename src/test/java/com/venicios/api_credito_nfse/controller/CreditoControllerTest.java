@@ -54,7 +54,7 @@ public class CreditoControllerTest {
     }
 
     @Test
-    public void deveRetornarListaVazia_QuandoNaoEncontrarCreditosPorNumeroNfse() throws Exception {
+    public void deveRetornarListaVaziaQuandoNumeroNfseNaoEncontrado() throws Exception {
         when(creditoService.buscarPorNumeroNfse("00000")).thenReturn(List.of());
 
         mockMvc.perform(get("/api/creditos/00000"))
@@ -63,7 +63,7 @@ public class CreditoControllerTest {
     }
 
     @Test
-    public void deveRetornarListaVaziaQuandoNaoEncontrarCreditosPorNumeroNfse() throws Exception {
+    public void deveRetornarListaVaziaQuandoNumeroCreditoNaoEncontrado() throws Exception {
         when(creditoService.buscarPorNumeroCredito("11111")).thenReturn(List.of());
 
         mockMvc.perform(get("/api/creditos/credito/11111"))
