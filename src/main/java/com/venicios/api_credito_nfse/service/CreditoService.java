@@ -8,11 +8,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-
-
 @Service
 public class CreditoService {
-
     private final CreditoRepository repository;
     private final CreditoModelAssembler assembler;
 

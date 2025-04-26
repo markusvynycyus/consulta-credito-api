@@ -9,7 +9,7 @@ import java.util.List;
 @Repository
 public interface CreditoRepository extends JpaRepository<Credito, Long> {
 
-    List<Credito> findByNumeroNfse(String numeroNfse);
+   List<Credito> findByNumeroNfse(String numeroNfse);
 
-    List<Credito> findByNumeroCredito(String numeroCredito);
+   List<Credito> findByNumeroCredito(String numeroCredito);
 }
