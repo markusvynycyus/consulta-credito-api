@@ -135,13 +135,35 @@ Para utilizar a funcionalidade de mensageria da API, é necessário instalar o A
 
 ### 1. Baixe o Apache Kafka
 - Acesse o site oficial: [https://kafka.apache.org/downloads](https://kafka.apache.org/downloads)
-- Baixe a versão mais recente (recomendado versão binária)
-
-### 2. Extraia o arquivo
+- Descompactar a pasta
+### 2.Inicializar o Kafka e Zookeeper
+- Inicie o Zookeeper executando o comando:
 ```bash
-tar -xzf kafka_2.13-3.6.1.tgz  # substitua pelo nome do arquivo baixado
-cd kafka_2.13-3.6.1
+bin/zookeeper-server-start.sh config/zookeeper.properties
 ```
+ou no Windows:
+```bash
+bin\windows\zookeeper-server-start.bat config\zookeeper.properties
+```
+- Inicie o Kafka executando o comando:
+  ```bash
+bin/kafka-server-start.sh config/server.properties
+```
+ou no Windows:
+```bash
+bin\windows\kafka-server-start.bat config/server.properties
+```
+### 2.Configurar o Kafka Tool
+ - Acesse o site oficial: [https://www.kafkatool.com/download.html](https://kafka.apache.org/downloads)
+ - Abrir o Kafka Tool e Adicionar um Novo Cluster
+ - Abra o Kafka Tool.
+ - Vá em File > Add Cluster
+   **Preencha os detalhes do Cluster**:
+ - Preencha os detalhes do cluster:
+    * Cluster Name: Escolha um nome descritivo, como "MeuClusterKafka".
+    * Bootstrap Servers: Insira localhost:9092 (ou o endereço do seu servidor Kafka).
+    * Kafka Cluster Version: Selecione a versão correspondente à sua instalação do Kafka.
+    * Zookeeper: Insira localhost:2181 (ou o endereço do seu servidor Zookeeper).
 
 ## 🏗️ Estrutura do Projeto
 
@@ -152,7 +174,7 @@ src/
 │   │   └── com/
 │   │       └── venicios/
 │   │           └── api_credito_nfse/
-│   │               ├── core/              # Configurações do sistema
+│   │               ├── config/              # Configurações do sistema
 │   │               ├── controller/        # Endpoints da API
 │   │               ├── dto/               # Data Transfer Objects
 │   │               ├── exception/         # Tratamento de erros
@@ -174,12 +196,5 @@ Contribuições são bem-vindas! Siga estes passos:
 4. Push para a branch (`git push origin feature/nova-funcionalidade`)
 5. Abra um Pull Request
 
-## 📄 Licença
-
-Este projeto está licenciado sob a licença MIT - veja o arquivo [LICENSE](LICENSE) para detalhes.
-
----
-
 **Desenvolvido por** [Marcos Venicios Evangelista Chaves  
 **Contato**: markusvynycyus@hotmail.com  
-**Versão**: 1.0.0
