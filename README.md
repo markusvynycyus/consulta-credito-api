@@ -158,8 +158,8 @@ bin\windows\kafka-server-start.bat config/server.properties
  - Abrir o Kafka Tool e Adicionar um Novo Cluster
  - Abra o Kafka Tool.
  - Vá em File > Add Cluster
-   **Preencha os detalhes do Cluster**:
- - Preencha os detalhes do cluster:
+   
+   **Preencha os detalhes do Cluster**: 
     * Cluster Name: Escolha um nome descritivo, como "MeuClusterKafka".
     * Bootstrap Servers: Insira localhost:9092 (ou o endereço do seu servidor Kafka).
     * Kafka Cluster Version: Selecione a versão correspondente à sua instalação do Kafka.
