@@ -141,7 +141,7 @@ Para utilizar a funcionalidade de mensageria da API, é necessário instalar o A
   - Padrão DTO para transferência otimizada de dados
   - Mapeamento inteligente com ModelMapper
   - Separação clara de responsabilidades (Controller-Service-Repository)
-````
+
 
 
 ```
