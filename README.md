@@ -132,15 +132,28 @@ Resposta esperada:
 ## 📚 Instalar o Kafka
 
 Para utilizar a funcionalidade de mensageria da API, é necessário instalar o Apache Kafka. Siga os passos abaixo:
-- **Consultas Avançadas**
-  - Busca de créditos por número da NFSe
-  - Pesquisa por número do crédito
-  - Filtros combinados para consultas complexas
 
-- **Arquitetura Moderna**
+- **1.Baixe o Apache Kafka**
+    - Baixe a versão mais recente do Apache Kafka a partir do site oficial: https://kafka.apache.org/downloads
+
+- **2.Extraia o arquivo**
   - Padrão DTO para transferência otimizada de dados
   - Mapeamento inteligente com ModelMapper
   - Separação clara de responsabilidades (Controller-Service-Repository)
+  - 
+- **2.Extraia o arquivo**
+
+- **2.Extraia o arquivo**
+   ```bash
+git clone https://github.com/seu-usuario/api-credito-nfse.git
+cd api-credito-nfse
+mvn install
+
+
+ - **2.Extraia o arquivo**
+
+- **2.Extraia o arquivo**
+ - ** Inicie o ZooKeeper **
 
 ## 🏗️ Estrutura do Projeto
 
