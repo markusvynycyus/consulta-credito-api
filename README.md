@@ -146,7 +146,7 @@ ou no Windows:
 bin\windows\zookeeper-server-start.bat config\zookeeper.properties
 ```
 - Inicie o Kafka executando o comando:
-  ```bash
+```bash
 bin/kafka-server-start.sh config/server.properties
 ```
 ou no Windows:
