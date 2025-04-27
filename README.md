@@ -142,16 +142,6 @@ Para utilizar a funcionalidade de mensageria da API, é necessário instalar o A
   - Mapeamento inteligente com ModelMapper
   - Separação clara de responsabilidades (Controller-Service-Repository)
 
-
-
-```
-## 📚 Documentação da API
-
-A API está documentada com Swagger e pode ser acessada em:
-```
-http://localhost:8080/swagger-ui.html
-```
-
 ## 🏗️ Estrutura do Projeto
 
 ```plaintext
