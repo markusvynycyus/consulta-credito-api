@@ -132,8 +132,17 @@ Resposta esperada:
 ## 📚 Instalar o Kafka
 
 Para utilizar a funcionalidade de mensageria da API, é necessário instalar o Apache Kafka. Siga os passos abaixo:
+- **Consultas Avançadas**
+  - Busca de créditos por número da NFSe
+  - Pesquisa por número do crédito
+  - Filtros combinados para consultas complexas
+
+- **Arquitetura Moderna**
+  - Padrão DTO para transferência otimizada de dados
+  - Mapeamento inteligente com ModelMapper
+  - Separação clara de responsabilidades (Controller-Service-Repository)
 ````
-```
+
 
 ```
 ## 📚 Documentação da API
