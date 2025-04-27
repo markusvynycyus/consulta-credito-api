@@ -22,8 +22,8 @@ public class CreditoService {
         List<Credito> creditos = repository.findByNumeroNfse(numeroNfse);
         return assembler.toCollectionModel(creditos);
     }
-    public List<CreditoDTO> buscarPorNumeroCredito(String numeroCredito) {
-        List<Credito> creditos = repository.findByNumeroCredito(numeroCredito);
-        return assembler.toCollectionModel(creditos);
+    public CreditoDTO buscarPorNumeroCredito(String numeroCredito) {
+        Credito credito = repository.findByNumeroCredito(numeroCredito).get();
+        return assembler.toModel(credito);
     }
 }

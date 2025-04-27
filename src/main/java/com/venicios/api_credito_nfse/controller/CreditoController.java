@@ -24,7 +24,7 @@ public class CreditoController {
     }
 
     @GetMapping("/credito/{numeroCredito}")
-    public List<CreditoDTO> buscarPorNumeroCredito(@PathVariable String numeroCredito) {
+    public CreditoDTO buscarPorNumeroCredito(@PathVariable String numeroCredito) {
         return creditoService.buscarPorNumeroCredito(numeroCredito);
     }
 }
