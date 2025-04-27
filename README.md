@@ -131,7 +131,8 @@ Resposta esperada:
 ```
 ## 📚 Instalar o Kafka
 
-Para utilizar a funcionalidade de mensageria da API, é necessário instalar o Apache Kafka. Siga os passos abaixo:```
+Para utilizar a funcionalidade de mensageria da API, é necessário instalar o Apache Kafka. Siga os passos abaixo:
+````
 ```
 
 ```
