@@ -31,5 +31,4 @@ public class CreditoController {
         return creditoService.buscarPorNumeroCredito(numeroCredito);
     }
 
-
 }
